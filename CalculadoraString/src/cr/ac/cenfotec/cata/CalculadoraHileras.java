@@ -10,15 +10,11 @@ public class CalculadoraHileras {
 		
 		String[] numeros = string.split(",");
 		
-		if(numeros.length > 3) {
-			throw new Exception("Too much parameters");
+		int total = 0;
+		for(int i = 0;i<numeros.length;i++) {
+			total += Integer.parseInt(numeros[i]);
 		}
-		if(numeros.length == 2) {
-			return Integer.parseInt(numeros[0])+Integer.parseInt(numeros[1]);
-		} else {
-			return Integer.parseInt(numeros[0])+Integer.parseInt(numeros[1])+Integer.parseInt(numeros[2]);
-		}
-		
+		return total;
 	}
 
 }

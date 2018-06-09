@@ -25,5 +25,9 @@ public class CalculadoraHilerasTest {
 	public void testErrorNumeroParametros() throws Exception {
 		assertEquals(4,calc.add("1,1,1,1"));
 	}
+	@Test
+	public void testMultiplesValores() throws Exception {
+		assertEquals(4,calc.add("1,1,1,1"));
+	}
 
 }
